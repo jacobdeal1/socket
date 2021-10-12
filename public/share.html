@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Share</title>
+    </head>
+    <body class="sharepage">
+        <div class="topbar">
+            <div class="toplogo">
+                <a href="index.html"
+                    ><img src="images/arcodelogo.png" alt="arcode"
+                /></a>
+            </div>
+            <div class="navbar">
+                <a class="underline" href="play.html">Play</a>
+                <a class="underline" href="chat.html">Chat</a>
+                <a class="underline" id="active" href="share.html">Share</a>
+                <a class="underline" href="login.html">Login</a>
+            </div>
+        </div>
+        <div>
+            <div class="sharehead">
+                <h1 class="shareheadtext">Share Your Game</h1>
+            </div>
+            <div class="shareblock">
+                <h1 class="sharemsg">
+                    Fill out the form below to have your game reviewed
+                </h1>
+                <div class="sharefirstrow">
+                    <div class="sharepair">
+                        <span class="shareform">GitHub Repo:</span>
+                        <input
+                            class="sharebox"
+                            type="text"
+                            placeholder="git@github.com:username/repo"
+                            required
+                        />
+                    </div>
+                    <div class="sharepair">
+                        <span class="shareform">Game:</span>
+                        <input
+                            class="namebox"
+                            type="text"
+                            placeholder="`Example Game`"
+                            required
+                        />
+                    </div>
+                </div>
+                <div class="centerbtn">
+                    <button class="sharebtn" type="submit">Share</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
