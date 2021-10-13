@@ -18,7 +18,6 @@
                 <a class="underline" href="play.html">Play</a>
                 <a class="underline" href="chat.html">Chat</a>
                 <a class="underline" id="active" href="share.html">Share</a>
-                <a class="underline" href="login.html">Login</a>
             </div>
         </div>
         <div>
@@ -29,29 +28,47 @@
                 <h1 class="sharemsg">
                     Fill out the form below to have your game reviewed
                 </h1>
-                <div class="sharefirstrow">
-                    <div class="sharepair">
-                        <span class="shareform">GitHub Repo:</span>
-                        <input
-                            class="sharebox"
-                            type="text"
-                            placeholder="git@github.com:username/repo"
-                            required
-                        />
+                <form action="mailto:jadeal1515@gmail.com">
+                    <div class="sharefirstrow">
+                        <div class="sharepair">
+                            <span class="shareform">GitHub Repo:</span>
+                            <input
+                                class="sharebox"
+                                type="text"
+                                placeholder="git@github.com:username/repo"
+                                required
+                            />
+                        </div>
+                        <div class="sharepair">
+                            <span class="shareform">Game:</span>
+                            <input
+                                class="namebox"
+                                type="text"
+                                placeholder="`Example Game`"
+                                required
+                            />
+                        </div>
                     </div>
-                    <div class="sharepair">
-                        <span class="shareform">Game:</span>
-                        <input
-                            class="namebox"
-                            type="text"
-                            placeholder="`Example Game`"
-                            required
-                        />
+                    <div class="sharesecondrow">
+                        <div class="shareuser">
+                            <span class="shareform">Username:</span>
+                            <input
+                                class="shareusertype"
+                                type="text"
+                                placeholder="Enter Username"
+                                required
+                            />
+                        </div>
+                        <label for="sharefile"
+                            >Upload an image for a thumbnail</label
+                        >
+                        <input type="file" id="sharefile" name="sharefile" />
                     </div>
-                </div>
-                <div class="centerbtn">
-                    <button class="sharebtn" type="submit">Share</button>
-                </div>
+                    <div class="centerbtn">
+                        <input type="submit" value="Submit">
+                        
+                    </div>
+                </form>
             </div>
         </div>
     </body>

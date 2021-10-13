@@ -482,6 +482,30 @@ span {
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.sharesecondrow {
+}
+
+.shareuser {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.shareusertype {
+    margin-left: 40px;
+
+    width: 120px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    outline: none;
+    background: transparent;
+    color: #172130;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
 .sharebtn {
     width: 20%;
     padding: 10px 30px;
@@ -514,7 +538,6 @@ span {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
 }
 
 .chat-container {
@@ -546,27 +569,30 @@ span {
 }
 
 .chat-sidebar {
-    background: lightgray;
+    background: #172130;
     color: #fff;
     padding: 20px 20px 60px 40px;
     overflow-y: scroll;
+    border-color: lightgray;
+    border-style: solid;
+    border-width: 5px;
 }
 
 .chat-sidebar h2 {
     font-size: 20px;
-    color: #172130;
+    color: #fff;
     padding: 10px;
     margin-bottom: 20px;
 }
 
 .chat-sidebar h3 {
     margin-bottom: 15px;
-    color: #172130;
+    color: #fff;
 }
 
 .chat-sidebar ul li {
     padding: 10px 0;
-    color: #172130;
+    color: #fff;
     list-style-type: none;
 }
 
@@ -592,6 +618,14 @@ span {
     margin-bottom: 7px;
 }
 
+.chatflex {
+    display: flex;
+}
+
+#room-name {
+    padding-left: 10px;
+}
+
 .chat-messages .message .meta span {
     color: lightgray;
     padding-left: 10px;
@@ -614,13 +648,13 @@ span {
     margin-top: 18px;
 }
 
-#leave-btn{
+#leave-btn {
     background-color: #172130;
     opacity: 1;
     cursor: pointer;
 }
 
-.sndbtn{
+.sndbtn {
     background-color: #172130;
     padding: 20px;
     margin: 15px;
@@ -640,6 +674,26 @@ span {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    color: #172130;
+}
+
+.joinbtncenter {
+    text-align: center;
+}
+
+.joinbtn {
+    cursor: pointer;
+    background-color: #172130;
+    opacity: 1;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-decoration: none;
+    border: 0;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
 }
 
 .join-container {
@@ -667,6 +721,14 @@ span {
 
 .join-main .form-control {
     margin-bottom: 20px;
+}
+
+.form-control {
+    margin-left: 10px;
+}
+
+#username {
+    width: 97%;
 }
 
 .join-main label {
@@ -702,4 +764,64 @@ span {
     .chat-sidebar {
         display: none;
     }
+}
+
+/*tic tac toe*/
+
+.tttimg {
+    opacity: 2;
+}
+
+.tttpage {
+    background-color: #172130;
+    color: white;
+}
+
+.tttframe {
+    text-align: center;
+}
+
+.game--title {
+    font-size: 100px;
+    margin: 10px auto;
+}
+
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 10px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
+
+.game--status {
+    font-size: 50px;
+    margin: 20px auto;
+}
+
+.game--restart {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    background-color: #fff;
+    color: #172130;
+    cursor: pointer;
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+.game--restart:hover {
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
 }
